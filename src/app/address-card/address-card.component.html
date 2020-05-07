@@ -1,0 +1,9 @@
+
+<div class="container">
+    <h1>{{user.name}}</h1>
+    <h2>{{user.address}}</h2>
+    <div *ngIf = "user.phone.length >6">
+        <p *ngFor = "let phone of user.phone">{{phone}}</p>
+    </div>
+
+</div>
